@@ -1,0 +1,50 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.night-mode {
+  background-color: #333;
+}
+
+.night-mode button {
+  color: #fff;
+}
+
+.boxcontainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxcontainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.calendar-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.highlighted {
+  background-color: yellow;
+}
+
+.selected {
+  background-color: lightblue;
+}
